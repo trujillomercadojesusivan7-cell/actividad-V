@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Iniciar sesión</h1>
+    <p class="sub">Ingresa tu usuario y contraseña.</p>
+
+    <div class="field">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" autocomplete="username">
+    </div>
+
+    <div class="field">
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" autocomplete="current-password">
+    </div>
+
+    <button type="button" id="btnEnviar">Enviar</button>
+
+    <div id="mensaje" role="alert"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
